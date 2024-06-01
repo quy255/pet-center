@@ -85,7 +85,12 @@ public class ViewFactory {
 
         return mSalersView;
     }
-
+    
+     public void showRegisterWindow(){
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Register.fxml"));
+        createStage(loader);
+    }
+     
     public void showLoginWindow(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
         createStage(loader);
